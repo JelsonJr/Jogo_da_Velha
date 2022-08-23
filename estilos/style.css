@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Edu VIC WA NT Beginner';
+    background-image: repeating-linear-gradient(0deg, #474bff, #474bff 2px, transparent 2px, transparent);
+    background-size: 32px 32px;
+    background-color: #ffffff;
+}
+
+.titulo, h3 {
+    margin-top: 10px;
+    margin-bottom: 27px;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 300px;
+    padding: 10px;
+}
+
+.grid {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.campo {
+    width: 80px;
+    height: 65px;
+    font-size: 35px;
+    font-weight: 300;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #120909; 
+}
+
+.campo:nth-child(1), .campo:nth-child(2), .campo:nth-child(3){
+    border-top: none;
+}
+
+.campo:nth-child(1), .campo:nth-child(4), .campo:nth-child(7){
+    border-left: none;
+}
+
+.campo:nth-child(3), .campo:nth-child(6), .campo:nth-child(9){
+    border-right: none;
+}
+
+.campo:nth-child(7), .campo:nth-child(8), .campo:nth-child(9){
+    border-bottom: none;
+}
+
+#tela-final {
+    width: 50%;
+    height: 60px;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+    font-size: 60px;
+    visibility: hidden;
+}
+
+#qr-code{
+    width: 120px;
+    margin-top: 15px;
+    padding: 15px;
+}
